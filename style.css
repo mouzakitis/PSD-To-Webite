@@ -74,41 +74,6 @@ header nav li a.current{
     max-height: 500px;
     overflow: hidden;
 }
-#main-banner h2{
-    color: #f3f3f3;
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    margin-left: -491px;
-    font-size: 40px;
-}
-
-#main-banner h3{
-    color: #a8a8a8;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-left: -393px;
-    font-size: 32px;
-}
-
-#main-banner .btn{
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    margin-left: -75px;
-    text-align: center;
-    width: 140px;
-    padding: 15px 0;
-    height: 12px;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: white;
-    border-bottom: 5px solid #2e668b;
-    background-color: #3f8dbf;
-    cursor: pointer;
-    border-radius: 3px;
-}
 
 #selling-points{
     margin-top: 60px;
@@ -305,5 +270,69 @@ footer li.tw{
     
     #latest-work h2{
         text-align: center;
+    }
+}
+
+@media screen and (max-width:480px){
+    #selling-points li{
+        width: 80%;
+        padding: 0 10%;
+        margin: 20px 0;
+    }
+    #latest-work li{
+        width: 80%;
+        margin: 30px 10% !important;
+    }
+    
+    #quote{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    footer{
+        width: 100%;
+        float: none;
+        border-top: 2px solid #333;
+    }
+    
+    header nav li{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    header nav{
+        background: #555;
+    }
+    header .wrapper{
+        padding: 0;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 0;
+    }
+    
+    header nav li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: #999;
+        border-top:1px solid #4f4f4f;
+    }
+    
+    #burger-nav{
+        width: 100%;
+        height: 40px;
+        background: url(Img/burger-icon.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+    
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+    }
+    
+    header nav ul.open{
+        height: auto;
     }
 }
